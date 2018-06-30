@@ -1,254 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="20dp"
-        tools:context=".MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".MainActivity">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What creature is depicted in the emblem for Gryffindor house?"/>
-
-            <RadioGroup
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:orientation="vertical">
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A lion"/>
 
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="An eagle"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_1"
+                        android:layout_marginTop="16dp"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
 
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A snake"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A badger"/>
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text='Among the wizarding community, the term "Muggle" refers to what kind of person?'/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A non-magical person form a magical family"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A non-magical person from a nom-magical family"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A magical person with only one magical parent"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A person who is really bad at magic" />
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="True or false: Professor Dumbledore's spectacles are rectangular?"/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="True"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="False"/>
+                        <RadioGroup
+                        android:id="@+id/questionOneOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
 
 
-            </RadioGroup>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_1_option_1"
+                                android:textSize="16sp"
+                                android:fontFamily="sans-serif-light"
+                                android:textColor="@color/white"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text='Which Hogwarts student says, "I dont go looking for trouble. Trouble usually finds me"?'/>
+                            <RadioButton
+                                android:id="@+id/questionOneCorrectAnswer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_1_option_2"
+                                android:textSize="16sp"
+                                android:fontFamily="sans-serif-light"
+                                android:textColor="@color/white"/>
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-                <RadioButton android:id="@+id/radio_pirates"
+                            <RadioButton android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_1_option_3"
+                                android:textSize="16sp"
+                                android:fontFamily="sans-serif-light"
+                                android:textColor="@color/white"/>
+
+                            <RadioButton android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_1_option_4"
+                                android:textSize="16sp"
+                                android:fontFamily="sans-serif-light"
+                                android:textColor="@color/white"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_2"
+                        android:layout_marginTop="16dp"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                        <RadioGroup
+                        android:id="@+id/questionTwoOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/questionTwoCorrectAnswer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_2_option_1"
+                                android:textSize="16sp"
+                                android:fontFamily="sans-serif-light"
+                                android:textColor="@color/white"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_2_option_2"
+                                android:textSize="16sp"
+                                android:fontFamily="sans-serif-light"
+                                android:textColor="@color/white"/>
+
+                            <RadioButton android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_2_option_3"
+                                android:textSize="16sp"
+                                android:fontFamily="sans-serif-light"
+                                android:textColor="@color/white"/>
+
+                            <RadioButton android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_2_option_4"
+                                android:textSize="16sp"
+                                android:fontFamily="sans-serif-light"
+                                android:textColor="@color/white"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/question_3"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <CheckBox
+                        android:id="@+id/questionThreeOptionOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/question_3_option_1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <CheckBox
+                        android:id="@+id/questionThreeOptionTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/question_3_option_2"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <CheckBox
+                        android:id="@+id/questionThreeOptionThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/question_3_option_3"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <CheckBox
+                        android:id="@+id/questionThreeOptionFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/question_3_option_4"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_4"
+                        android:layout_marginTop="16dp"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <CheckBox
+                        android:id="@+id/questionFourOptionOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/question_4_option_1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <CheckBox
+                        android:id="@+id/questionFourOptionTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/question_4_option_2"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <CheckBox
+                        android:id="@+id/questionFourOptionThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/question_4_option_3"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <CheckBox
+                        android:id="@+id/questionFourOptionFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/question_4_option_4"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_5"
+                        android:layout_marginTop="16dp"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/questionFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_6"
+                        android:layout_marginTop="16dp"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/questionSix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:hint="@string/question_6_hint"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="55dp"/>
+            </LinearLayout>
+
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fred Weasley"/>
+                    android:text="Submit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:onClick="submitAnswer"/>
 
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Harry Potter"/>
+        </RelativeLayout>
 
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Draco Malfoy"/>
-
-                <RadioButton android:id="@+id/radio_ninjas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ron Weasley"/>
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Select all that apply:
-    Members of Ravenclaw house are known for possessing which two of the following traits?"/>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Intelligence"/>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Intelligence"/>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Intelligence"/>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Intelligence"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What creature is depicted in the emblem for Gryffindor house?"/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A lion"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="An eagle"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A snake"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A badger"/>
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What creature is depicted in the emblem for Gryffindor house?"/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A lion"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="An eagle"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A snake"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A badger"/>
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What creature is depicted in the emblem for Gryffindor house?"/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A lion"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="An eagle"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A snake"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A badger"/>
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What creature is depicted in the emblem for Gryffindor house?"/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A lion"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="An eagle"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A snake"/>
-
-                <RadioButton android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A badger"/>
-            </RadioGroup>
-        </LinearLayout>
-    </ScrollView>
+</ScrollView>

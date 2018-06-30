@@ -1,3 +1,40 @@
 <resources>
-    <string name="app_name">Quiz Application</string>
+    <string name="app_name">ALC Quiz Application</string>
+
+
+    <string name="question_1">1. What creature is depicted in the emblem for Gryffindor house?</string>
+    <string name="question_1_option_1">An eagle</string>
+    <string name="question_1_option_2">A lion</string>
+    <string name="question_1_option_3">A snake</string>
+    <string name="question_1_option_4">A badger</string>
+
+
+    <string name="question_2">2. What is Lord Voldermort\'s real name?</string>
+    <string name="question_2_option_1">Tom Marvolo Riddle</string>
+    <string name="question_2_option_2">Tom Marvilo Riddle</string>
+    <string name="question_2_option_3">Tom Marvin Riddle</string>
+    <string name="question_2_option_4">Tom Ravolo Riddle</string>
+
+
+    <string name="question_3">3. Which of these names belongs to harry?</string>
+    <string name="question_3_option_1">Draco</string>
+    <string name="question_3_option_2">James</string>
+    <string name="question_3_option_3">Neville</string>
+    <string name="question_3_option_4">Potter</string>
+
+
+    <string name="question_4">4. Select all that apply</string>
+    <string name="question_4_option_1">Harry Potter and the prisoner of azkaban</string>
+    <string name="question_4_option_2">Harry Potter and the goblet of fire</string>
+    <string name="question_4_option_3">Harry Potter and the lost diadem</string>
+    <string name="question_4_option_4">Harry Potter and the half blood prince</string>
+
+
+    <string name="question_5">5. What is the name of Hogwarts inn keeper?</string>
+
+    <string name="question_6">6. What is the name of Harry Potter\'s wife?</string>
+    <string name="question_6_hint">Ron Sister</string>
+
+
+
 </resources>
